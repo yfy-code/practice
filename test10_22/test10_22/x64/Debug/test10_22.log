@@ -1,5 +1,0 @@
-﻿  test.c
-D:\C\test10_22\test10_22\test.c(7,2): warning C4013: “system”未定义；假设外部返回 int
-D:\C\test10_22\test10_22\test.c(12,7): warning C4013: “strcmp”未定义；假设外部返回 int
-  LINK : 没有找到 D:\C\test10_22\x64\Debug\test10_22.exe 或上一个增量链接没有生成它；正在执行完全链接
-  test10_22.vcxproj -> D:\C\test10_22\x64\Debug\test10_22.exe
