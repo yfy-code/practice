@@ -4,25 +4,26 @@
 //计算求和
 //求Sn = a + aa + aaa + aaaa + aaaaa的前5项之和，其中a是一个数字，
 //例如：2 + 22 + 222 + 2222 + 22222
-//int sum(int i)
-//{
-//	int a = 0;
-//	int b = i;
-//	int sum1=0;
-//	for (a = 0; a <= 4; a++)
-//	{
-//		sum1 += i;
-//		i =  b+ i * 10;
-//	}
-//	return sum1;
-//}
-//int main()
-//{
-//	int i = 2;
-//	int ret=sum(i);
-//	printf("%d",ret);
-//	return 0;
-//}
+int sum(int i)
+{
+	int a = 0;
+	int x = i;
+	int sum1=0;
+	for (a = 0; a <= 4; a++)
+	{
+		sum1 += x;
+		x =  i+ x * 10;
+	}
+	return sum1;
+}
+int main()
+{
+	int i = 0;
+	scanf("%d", &i);
+	int ret=sum(i);
+	printf("%d",ret);
+	return 0;
+}
 
 
 //打印水仙花数
@@ -62,18 +63,18 @@
 //使用指针打印数组内容
 //写一个函数打印arr数组的内容，不使用数组下标，使用指针。
 //arr是一个整形一维数组。
-void DisplayArr(int* arr,int str)
-{
-	int i = 0;
-	for (i = 0; i < str; i++)
-	{
-		printf("%d ", *(arr+i));
-	}
-}
-int main()
-{
-	int arr[] = {1,3,1,2,5,1,8,1,9,6};
-	int str = sizeof(arr) / sizeof(arr[0]);
-	DisplayArr(arr,str);
-	return 0;
-}
+//void DisplayArr(int* arr,int str)
+//{
+//	int i = 0;
+//	for (i = 0; i < str; i++)
+//	{
+//		printf("%d ", *(arr+i));
+//	}
+//}
+//int main()
+//{
+//	int arr[] = {1,3,1,2,5,1,8,1,9,6};
+//	int str = sizeof(arr) / sizeof(arr[0]);
+//	DisplayArr(arr,str);
+//	return 0;
+//}
